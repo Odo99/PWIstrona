@@ -63,3 +63,21 @@ li
     text-align: center;
     display:block;
 }
+
+.text1 {
+    position: relative;
+    z-index: 1;
+    color:deeppink;
+    -webkit-column-count: 3;
+    -webkit-column-width: 200px;
+
+}
+
+.text1 .textBackground {
+    position: absolute;
+    z-index: -1;
+    background-image: url("wixapol.png");
+    opacity: 0.2;
+    width: 100%;
+    height: 100%;
+}
