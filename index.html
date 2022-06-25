@@ -1,98 +1,26 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Strona</title>
-    <link rel="stylesheet" type="text/css" href="strona.css">
-    <link rel="stylesheet" type="text/css" href="kik.css">
+	<title>Adam Ślęczkowski</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+
 </head>
 <body>
-	<p>
-	Odnośnie zadania "Kod po stronie serwera" - stworzyłem aplikację MVC korzystając z frameworka MVC ASP .NET Core, jednak nie rozumiem jak mogę tutaj umieścić samą stronę -
-	strona z aplikacji bez części serwerowej nie będzie działać (tymbardziej  że nie jest to już rozszerzenie .html a .cshtml).
-	Na pewno jest to jakoś do zrobienia, ale nie wiem jak, proszę mi wybaczyć.
-	Tak czy siak w zadaniu wrzucam spakowany cały projekt aplikacji - aby do niej przejść po uruchomieniu należy wejść na adres https://localhost:{PORT}/Simple
-	</p>
-    <br>
-    <div class="text1">
-        <div class="textBackground"></div>
-            Duis dapibus, turpis non maximus laoreet, augue orci laoreet arcu, eu consectetur nibh neque nec leo. Nullam ut turpis id diam euismod luctus id non nibh. Donec lacinia lorem convallis mauris aliquet, nec semper nisi cursus. Curabitur orci turpis, pretium quis nisi id, imperdiet faucibus velit. Etiam mattis fringilla arcu non varius. Aenean ultrices ipsum mauris, ac vestibulum mauris condimentum non. Proin consequat, nibh blandit molestie fringilla, neque est faucibus felis, et vestibulum erat eros eu arcu. Donec ornare condimentum auctor. Praesent eu velit sit amet risus faucibus vulputate. Duis vestibulum placerat odio, et pharetra ligula ultricies ac. Vestibulum sit amet nisi quis lacus commodo ornare. Aliquam erat volutpat. Nulla congue justo mi, vel commodo nisl consectetur in. Quisque lacinia quis tortor bibendum dignissim. Maecenas ut magna vitae tellus varius porttitor. Pellentesque id malesuada elit, nec varius leo.
-            Quisque tincidunt auctor tellus. Sed mollis lacinia tempus. Vestibulum tincidunt aliquet dui at rhoncus. Curabitur sit amet augue tempus eros tristique dapibus. Nulla sollicitudin efficitur ultricies. Pellentesque sed semper libero. Praesent rutrum convallis ipsum, id tristique neque sodales non. Maecenas rhoncus tortor quis tempus porta. Quisque pulvinar molestie ligula, vel auctor tellus pellentesque at. Proin ligula libero, facilisis ac imperdiet at, tempus in nisi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent nisi eros, suscipit sed ornare posuere, semper et magna.Curabitur sed sodales nibh, nec pellentesque mi. Fusce eu mattis ligula, sit amet dignissim justo. Donec ultricies molestie efficitur. Nunc nec metus a nunc eleifend dapibus id a nisl. Curabitur vel nisi eu erat posuere efficitur at quis tellus. Maecenas et ante justo. Donec in massa aliquam, hendrerit lacus in, varius mi. Pellentesque rhoncus nunc a nibh faucibus placerat. Aliquam nec quam ac magna tempor consectetur ut sit amet elit. Maecenas molestie leo ipsum. Morbi iaculis arcu sit amet sem pulvinar hendrerit.
+    <div id="lang-button"></div>
+    <div class="columns"> 
+        <div class="column">
+            <div id="profile" class="profile "></div>
+            <br>
+            <br>
+            <br>
+            <div id="details" class="profile details"></div>
+        </div>
+        <div class="column">
+            <div id="tab" class="tab profile"></div>
+            <!--- <div id="tabscontent" class="profile"></div> !-->
+        </div>
     </div>
-    <section>
-        <nav>
-            <ul>
-                <li>
-                    <input id="option1" type="checkbox">
-                        Kółko i krzyżyk
-                    </input>
-                    <div class="inoption1">
-                        <div class="row">
-                            <div class="column">
-                                <img style="width:50%; margin-top: 25%;" src="speed_car_front.jpg">
-                            </div>
-                            <div class="column">
-                                <div hidden id="komunikat">
-                                    <h1 id="tresc"></h1>
-                                    <button id="przycisk">Zagraj jeszcze raz</button>
-                                </div>
-                                    <table id="board">
-                                        <tr>
-                                            <th x="0" y="0"></th>
-                                            <th x="1" y="0"></th>
-                                            <th x="2" y="0"></th>
-                                        </tr>
-                                        <tr>
-                                            <th x="0" y="1"></th>
-                                            <th x="1" y="1"></th>
-                                            <th x="2" y="1"></th>
-                                        </tr>
-                                        <tr>
-                                            <th x="0" y="2"></th>
-                                            <th x="1" y="2"></th>
-                                            <th x="2" y="2"></th>
-                                        </tr>
-                                    </table>
-                                    <script type="text/javascript" src="kik.js"></script>
-                                    <br>
-                            </div>
-                            <div class="column">
-                                <img style="width:50%; margin-top: 25%;" src="speed_car_back.jpg">
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <input id="option2" type="checkbox">
-                        ---LEPIEJ NIE ZAGLĄDAĆ---
-                    </input>
-                    <div class="inoption2">
-                        <p>Przecież ostrzegałem...</p>
-                        <p>Odbywa się tutaj impreza należąca do tego gatunku imprez, które kończą się totalnym zniszczeniem</p>
-                        <p>Prosiłbym o dyskrecję, ponieważ nie jestem pewien czy władze uczelni zareagują pozytywnie na tajną imprezę</p>
-                        <img style="width:75%" src="totalne_zn.jpg">
-                        <p>Zapraszamy do zapoznania się z tegorocznymi opiekunkami turnusu</p>
-                        <p>(to nikt inny jak sławne odlotowe agentki: Bujka, Bajka i Brawurka)</p>
-                        <img style="width:50%" src="jacys_bandyci.jpg">
-                    </div>
-                </li>
-                <li>
-                    <input id="option3" type="checkbox">
-                        Option 3
-                    </input>
-                    <div class="inoption3">
-                        Inside option 3
-                    </div>
-                </li>
-                <li>
-                    <input id="option4" type="checkbox">
-                        Option 4
-                    </input>
-                    <div class="inoption4">
-                        Inside option 4
-                    </div>
-                </li>
-            </ul>
-        </nav>
-    </section>
+<script type="text/javascript" src="js/scripts.js"></script>
 </body>
+</html>
